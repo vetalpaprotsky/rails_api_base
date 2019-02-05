@@ -7,5 +7,5 @@ class ApplicationController < ActionController::Base
 
   if Rails.application.config.try(:basic_auth_creds).present?
     http_basic_authenticate_with(Rails.application.config.basic_auth_creds)
-  end
+    end
 end
